@@ -6,6 +6,7 @@ license = "MIT"
 authors = ["Tristan Lostroh <tl8roy@gmail.com>"]
 edition = "2018"
 keywords = ["no_std", "cipher", "spritz"]
+repository = "https://github.com/tl8roy/spritz_cipher"
 
 #https://doc.rust-lang.org/stable/book/ch14-02-publishing-to-crates-io.html
 
