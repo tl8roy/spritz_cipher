@@ -1,0 +1,32 @@
+[package]
+name = "spritz_cipher"
+description = "A Rust implementation of the Spritz Cipher using https://github.com/abderraouf-adjal/ArduinoSpritzCipher as a base."
+version = "0.1.0"
+license = "MIT"
+authors = ["Tristan Lostroh <tl8roy@gmail.com>"]
+edition = "2018"
+keywords = ["no_std", "cipher", "spritz"]
+
+#https://doc.rust-lang.org/stable/book/ch14-02-publishing-to-crates-io.html
+
+[dependencies]
+zeroize = {version = "1.0", features = ["zeroize_derive"], default-features = false}
+
+[dependencies.rand]
+optional = true
+version = "0.7"
+
+[features]
+default = []
+
+
+[dev-dependencies]
+rand = "0.7"
+statistical = "1.0"
+libc = "0.2"
+
+[build-dependencies]
+cc = "1.0"
+
+
+#afl = "0.4"
