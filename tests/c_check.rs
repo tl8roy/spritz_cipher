@@ -13,7 +13,7 @@ mod c_check {
                             key: *const u8, keyLen: size_t);*/
             fn spritz_auth(digest: *mut u8, digestLen: size_t,
                             msg: *const u8, msgLen: size_t,
-                            key: *const u8, keyLen: size_t);
+                            key: *const u8, keyLen: size_t) -> i32;
         }
 
         
